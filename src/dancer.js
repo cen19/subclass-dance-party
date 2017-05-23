@@ -3,7 +3,6 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.top = top; // setting the instantiation of Dancer's top to top-parameter
   this.left = left; // setting the instance of Dancer's left to left-param
   this.timeBetweenSteps = timeBetweenSteps; // setting timeBetween steps
-
   this.$node = $('<span class="dancer"></span>'); // applying jQuery node to dancer
 
   this.step();
@@ -11,9 +10,10 @@ var Dancer = function(top, left, timeBetweenSteps) {
 };
 
 Dancer.prototype.step = function() {
-  setTimeout(function() {
-    this.step();
-  }, this.timeBetweenSteps);
+  var dance = this;
+  setTimeout(function() { 
+    dance.step(); 
+  }, dance.timeBetweenSteps);
 };
 
 
