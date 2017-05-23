@@ -11,7 +11,9 @@ var Dancer = function(top, left, timeBetweenSteps) {
 };
 
 Dancer.prototype.step = function() {
-
+  setTimeout(function() {
+    this.step();
+  }, this.timeBetweenSteps);
 };
 
 
@@ -21,8 +23,11 @@ Dancer.prototype.setPosition = function(top, left) {
   //
   this.top = top;
   this.left = left;
-
-  dancer.$node.css(styleSettings);
+  var styleSettings = {
+    'top': top,
+    'left': left
+  };
+  this.$node.css(styleSettings);
 };
 
 
