@@ -25,7 +25,12 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid orangered;
   border-radius:10px;
   position:absolute;
 }
+/*.circleDancer {
+  border: 10px solid blue;
+  border-radius: 50%;
+  position: absolute;
+}*/
