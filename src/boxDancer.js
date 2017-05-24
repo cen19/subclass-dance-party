@@ -1,15 +1,17 @@
 var BoxDancer = function (top, left, timeBetweenSteps) {
-  Dancer.call(this, top, left, timeBetweenSteps);
+  BlinkyDancer.call(this, top, left, timeBetweenSteps);
+  this.$node.addClass('boxDancer');
 
 };
 
-BoxDancer.prototype = Object.create(Dancer.prototype);
+BoxDancer.prototype = Object.create(BlinkyDancer.prototype);
 BoxDancer.prototype.constructor = BoxDancer;
 
-BoxDancer.prototype.step = function () {
-  Dancer.prototype.step.call(this);
-  this.$node.toggle();
-};
+// ==Inherited step from Blinky==
+// BoxDancer.prototype.step = function () {
+//   Dancer.prototype.step.call(this);
+//   this.$node.toggle();
+// };
 
 // BoxDancer.prototype.size = function() {
 //   this.$node.resize();

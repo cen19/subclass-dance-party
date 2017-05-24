@@ -29,8 +29,10 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
-/*.circleDancer {
+.boxDancer {
   border: 10px solid blue;
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: aliceblue;
   position: absolute;
-}*/
+}

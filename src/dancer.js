@@ -8,9 +8,9 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.step();
   this.setPosition(top, left);
 };
-  
+
 Dancer.prototype.step = function() {
-  var dance = this;
+  var dance = this; // need to have a 'that' so that it can not be overridden by the setTimeoutFunction's this
   setTimeout(function() { 
     dance.step(); 
   }, dance.timeBetweenSteps);
