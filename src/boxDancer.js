@@ -13,7 +13,5 @@ BoxDancer.prototype.constructor = BoxDancer;
 //   this.$node.toggle();
 // };
 
-// BoxDancer.prototype.size = function() {
-//   this.$node.resize();
-// };
+
 
